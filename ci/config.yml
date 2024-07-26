@@ -1,0 +1,24 @@
+global:
+  qsname: quickstart-drupal
+  owner: adethyv@amazon.com
+  # Regions must support Lambda and EFS
+  regions:
+    - us-east-1
+    - us-east-2
+    - us-west-2
+    - eu-central-1
+    - eu-west-1
+    - ap-southeast-2    
+  reporting: true
+  
+tests:
+  quickstart-drupal:
+    parameter_input: drupal-master.json
+    template_file: drupal-master.template
+    regions:
+    - us-east-1
+    - us-east-2
+    - us-west-2
+    - eu-central-1
+    - eu-west-1
+    - ap-southeast-2
